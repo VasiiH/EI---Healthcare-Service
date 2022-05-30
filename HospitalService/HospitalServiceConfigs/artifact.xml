@@ -17,4 +17,25 @@
     <artifact name="HealthcareAPI_metadata" groupId="org.mitrai.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
         <file>src/main/resources/metadata/HealthcareAPI_metadata.yaml</file>
     </artifact>
+    <artifact name="HospitalServicesEP" groupId="org.mitrai.com.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/HospitalServicesEP.xml</file>
+    </artifact>
+    <artifact name="HealthcareAPI" groupId="org.mitrai.com.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HealthcareAPI.xml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_swagger" groupId="org.mitrai.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareAPI_swagger.yaml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_metadata" groupId="org.mitrai.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareAPI_metadata.yaml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_V2" groupId="org.mitrai.com.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HealthcareAPI_V2.xml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_V2_swagger" groupId="org.mitrai.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareAPI_V2_swagger.yaml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_V2_metadata" groupId="org.mitrai.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareAPI_V2_metadata.yaml</file>
+    </artifact>
 </artifacts>

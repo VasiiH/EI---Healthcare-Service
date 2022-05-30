@@ -8,6 +8,9 @@
   <packaging>pom</packaging>
   <name>HospitalService</name>
   <description>HospitalService</description>
+  <modules>
+    <module>HospitalServiceRegistry</module>
+  </modules>
   <scm>
     <connection>scm:git:https://github.com/username/repository.git</connection>
     <developerConnection>scm:git:https://github.com/username/repository.git</developerConnection>
