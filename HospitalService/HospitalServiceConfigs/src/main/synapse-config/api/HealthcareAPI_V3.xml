@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/healthcare" name="HealthcareAPI_V3" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/categories/{category}/reserve">
+        <inSequence>
+            <property description="Hospital" expression="json-eval($.hospital)" name="Hospital" scope="default" type="STRING"/>
+            <switch source="get-property('Hospital')">
+                <case regex="grand oak community hospital">
+                    <call-template target="HospitalRoutingSeq">
+                        <with-param name="sethospital" value="grandoaks"/>
+                    </call-template>
+                    <call>
+                        <endpoint key="GrandOakEP"/>
+                    </call>
+                </case>
+                <case regex="clemency medical center">
+                    <call-template target="HospitalRoutingSeq">
+                        <with-param name="sethospital" value="clemency"/>
+                    </call-template>
+                    <call>
+                        <endpoint key="ClemencyEP"/>
+                    </call>
+                </case>
+                <case regex="pine valley community hospital">
+                    <call-template target="HospitalRoutingSeq">
+                        <with-param name="sethospital" value="pinevalley"/>
+                    </call-template>
+                    <call>
+                        <endpoint key="PineValleyEP"/>
+                    </call>
+                </case>
+                <default/>
+            </switch>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

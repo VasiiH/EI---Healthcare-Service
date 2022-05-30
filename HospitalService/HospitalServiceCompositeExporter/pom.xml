@@ -14,30 +14,37 @@
   <name>HospitalServiceCompositeExporter</name>
   <description>HospitalServiceCompositeExporter</description>
   <properties>
-    <org.mitrai.com.api_._HealthcareAPI_V2>capp/EnterpriseServiceBus</org.mitrai.com.api_._HealthcareAPI_V2>
-    <org.mitrai.com.metadata_._HealthcareAPI_V2_swagger>capp/EnterpriseServiceBus</org.mitrai.com.metadata_._HealthcareAPI_V2_swagger>
-    <org.mitrai.com.metadata_._HealthcareAPI_V2_metadata>capp/EnterpriseServiceBus</org.mitrai.com.metadata_._HealthcareAPI_V2_metadata>
+    <org.mitrai.com.metadata_._HealthcareAPI_V3_swagger>capp/EnterpriseServiceBus</org.mitrai.com.metadata_._HealthcareAPI_V3_swagger>
+    <org.mitrai.com.metadata_._HealthcareAPI_V3_metadata>capp/EnterpriseServiceBus</org.mitrai.com.metadata_._HealthcareAPI_V3_metadata>
+    <org.mitrai.com.template_._HospitalRoutingSeq>capp/EnterpriseServiceBus</org.mitrai.com.template_._HospitalRoutingSeq>
+    <org.mitrai.com.api_._HealthcareAPI_V3>capp/EnterpriseServiceBus</org.mitrai.com.api_._HealthcareAPI_V3>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/metadata=yaml,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
     <org.mitrai.com.endpoint_._HospitalServicesEP>capp/EnterpriseServiceBus</org.mitrai.com.endpoint_._HospitalServicesEP>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>org.mitrai.com.api</groupId>
-      <artifactId>HealthcareAPI_V2</artifactId>
+      <groupId>org.mitrai.com.metadata</groupId>
+      <artifactId>HealthcareAPI_V3_swagger</artifactId>
+      <version>1.0.0</version>
+      <type>yaml</type>
+    </dependency>
+    <dependency>
+      <groupId>org.mitrai.com.metadata</groupId>
+      <artifactId>HealthcareAPI_V3_metadata</artifactId>
+      <version>1.0.0</version>
+      <type>yaml</type>
+    </dependency>
+    <dependency>
+      <groupId>org.mitrai.com.template</groupId>
+      <artifactId>HospitalRoutingSeq</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
     <dependency>
-      <groupId>org.mitrai.com.metadata</groupId>
-      <artifactId>HealthcareAPI_V2_swagger</artifactId>
+      <groupId>org.mitrai.com.api</groupId>
+      <artifactId>HealthcareAPI_V3</artifactId>
       <version>1.0.0</version>
-      <type>yaml</type>
-    </dependency>
-    <dependency>
-      <groupId>org.mitrai.com.metadata</groupId>
-      <artifactId>HealthcareAPI_V2_metadata</artifactId>
-      <version>1.0.0</version>
-      <type>yaml</type>
+      <type>xml</type>
     </dependency>
     <dependency>
       <groupId>org.mitrai.com.endpoint</groupId>

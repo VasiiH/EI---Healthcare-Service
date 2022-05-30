@@ -38,4 +38,16 @@
     <artifact name="HealthcareAPI_V2_metadata" groupId="org.mitrai.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
         <file>src/main/resources/metadata/HealthcareAPI_V2_metadata.yaml</file>
     </artifact>
+    <artifact name="HospitalRoutingSeq" groupId="org.mitrai.com.template" version="1.0.0" type="synapse/sequenceTemplate" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/templates/HospitalRoutingSeq.xml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_V3" groupId="org.mitrai.com.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HealthcareAPI_V3.xml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_V3_swagger" groupId="org.mitrai.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareAPI_V3_swagger.yaml</file>
+    </artifact>
+    <artifact name="HealthcareAPI_V3_metadata" groupId="org.mitrai.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HealthcareAPI_V3_metadata.yaml</file>
+    </artifact>
 </artifacts>
