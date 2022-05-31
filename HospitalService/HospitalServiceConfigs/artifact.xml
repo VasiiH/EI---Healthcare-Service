@@ -50,4 +50,10 @@
     <artifact name="HealthcareAPI_V3_metadata" groupId="org.mitrai.com.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
         <file>src/main/resources/metadata/HealthcareAPI_V3_metadata.yaml</file>
     </artifact>
+    <artifact name="JMStoHTTPStockQuoteProxy" groupId="org.mitrai.com.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/JMStoHTTPStockQuoteProxy.xml</file>
+    </artifact>
+    <artifact name="JMStoHTTPStockQuoteProxy_proxy_metadata" groupId="org.mitrai.com.proxy-service.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/JMStoHTTPStockQuoteProxy_proxy_metadata.yaml</file>
+    </artifact>
 </artifacts>
