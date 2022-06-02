@@ -1,0 +1,24 @@
+execute the routing-requests-based-on-message-content implementation
+
+ensure the below artifacts were selected and run it
+
+- HealthcareAPI
+- ClemencyEP
+- GrandOakEP
+- PineValleyEP
+
+At the same time run the Hospital-Service-JDK11-2.0.0.jar using
+java -jar Hospital-Service-JDK11-2.0.0.jar command
+
+Then open the postman client and test the API
+
+Method - POST
+Headers - Content-Type=application/json
+URL - http://localhost:8290/healthcare/categories/surgery/reserve
+
+The URI-Template format that is used in this URL was defined when creating the API resource: http://host:port/categories/{category}/reserve.
+
+Body
+{ "patient": { "name": "John Doe", "dob": "1940-03-19", "ssn": "234-23-525", "address": "California", "phone": "8770586755", "email": "johndoe@gmail.com" }, "doctor": "thomas collins", "hospital_id": "grandoaks", "hospital": "grand oak community hospital", "appointment_date": "2025-04-02" }
+
+This JSON payload contains details of the appointment reservation, which includes patient details, doctor, hospital, and data of appointment.
